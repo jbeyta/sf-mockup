@@ -1,0 +1,47 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="time"],
+input[type="password"],
+input[type="phone"] {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: .874rem;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: .874rem;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: .874rem;
+}
+
+button, input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #1c2230;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    font-size: .875rem;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: background-color .3s;
+    
+    &:hover {
+        background-color: #3e4860;
+        transition: background-color .3s;
+    }
+
+    &.green {
+        background-color: green;
+
+        &:hover {
+            background-color: lighten(green, 10%);
+        }
+    }
+}

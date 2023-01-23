@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="author name" />
+        <meta name="application-name" content="app name" />
+        <meta name="desciption" content="page description" />
+        <meta name="keywords" content="Enter keywords here" />
+        <!-- Social Media Meta tags -->
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta name="theme-color" content="#222326" />
+        <link rel="apple-touch-icon" sizes="180x180" href="#" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icons/ico_32.png"
+        />
+        <link rel="icon" type="image/png" sizes="16x16" href="#" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+        <title>Spicy Forms Mockup</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="page-wrap">
+            <header>
+                <div class="logo-wrap">
+                    <img src="/assets/images/temp-logo.svg" alt="" />
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="/edit-form.html">
+                                <span class="icon">
+                                    <img src="assets/icons/doc.svg" alt="" />
+                                </span>
+                                Forms
+                            </a>
+                        </li>
+
+                        <li class="current">
+                            <a href="/index.html">
+                                <span class="icon">
+                                    <img src="assets/icons/meeting.svg" alt="" />
+                                </span>
+                                Meetings
+                            </a>
+                        </li>
+
+                        <li>
+                            <a>
+                                <span class="icon">
+                                    <img src="assets/icons/leads.svg" alt="" />
+                                </span>
+                                Leads
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav-list secondary">
+                        <li><a>Integrations</a></li>
+                        <li class="has-children"><a>Notifications</a></li>
+                        <li><a>Source</a></li>
+                        <li><a>Webhooks</a></li>
+                    </ul>
+                </nav>
+
+                <div class="lower">
+                    <p>
+                        <span class="icon"><img src="/assets/icons/account.svg" alt="" /></span>
+                        <a>user@email.com</a>
+                    </p>
+                    <p>
+                        <span class="icon"><img src="/assets/icons/settings.svg" alt="" /></span>
+                        <a>Settings</a>
+                    </p>
+                    <p>
+                        <span class="icon"><img src="/assets/icons/logout.svg" alt="" /></span>
+                        <a>Logout</a>
+                    </p>
+                </div>
+            </header>
+    
+            <main>
+                <div class="page-header">
+                    <h1 class="page-title">Meetings</h1>
+                </div>
+
+                <div class="meeting-filters">
+                    <div class="which-form filter-control">
+                        <select name="" id="">
+                            <option value="">All Forms</option>
+                            <option value="">Exmaple Form 1</option>
+                            <option value="">Exmaple Form 2</option>
+                            <option value="">Exmaple Form 3</option>
+                        </select>
+                    </div>
+
+                    <div class="date-range filter-control">
+                        <label for="">Start/End Date</label>
+                        <input type="text" name="" id="" value="12/24/2022" />
+                        <input type="text" name="" id="" value="12/25/2022" />
+                    </div>
+
+                    <div class="switch-wrap filter-control">
+                        <label for="close">Show Close Lead Statuses</label>
+                        <img src="assets/icons/switch.png" style="width: 30px; height: auto;" alt="">
+                    </div>
+
+                    <div class="view filter-control">
+                        <ul class="view-list">
+                            <li><span><img src="assets/icons/month.svg" alt=""></span></li>
+                            <li class="current"><a href="/index.html"><span><img src="assets/icons/list.svg" alt=""></span></a></li>
+                            <li><a href="/meetings-table.html"><span><img src="assets/icons/table.svg" alt=""></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="meetings-wrap">
+                    <div class="meeting grid">
+                        <div class="meta-item name col-span-6">
+                            <h3 class="meeting-name">Joban Clarke</h3>
+                            
+                            <div class="contact-info">
+                                <p>joban.clarke@joban.com</p>
+                                <p>
+                                    <b>Mobile:</b> (555) 555-5555<br>
+                                    <b>Office:</b> (555) 555-5555
+                                </p>
+                                <p>(Stripe api acct 1234)</p>
+                            </div>
+
+                            <div class="more-button" data-target="mi-1">
+                                <span class="label">More Info</span>
+                                <div class="img-wrap"><img src="assets/icons/add.svg" alt=""></div>
+                            </div>
+                        </div>
+                        
+                        <div class="meta-item demo-date col-span-6">
+                            <div class="demo-details grid">
+                                <div class="demo-header col-span-8">
+                                    <p class="lead-status booked">Demo Booked</p>
+                                    <h6>Demo with Sara on</h6>
+                                    <p>7/1/2023 9:00 am</p>
+                                    <p><small>Demo Booked: 6/1/2023 9:00 am</small></p>
+                                </div>
+                                
+                                <div class="demo-date-controls col-span-4">
+                                    <div class="toggle">
+                                        <span><img src="assets/icons/dots.svg" alt=""></span>
+                                    </div>
+
+                                    <ul class="inner">
+                                        <li>Label <span><img src="assets/icons/report.svg" alt=""></span></li>
+                                        <li>Label <span><img src="assets/icons/delete.svg" alt=""></span></li>
+                                        <li>Label <span><img src="assets/icons/archive.svg" alt=""></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="mi-1" class="add-info col-span-12">
+                            <div class="inner">
+                                <div class="grid">
+                                    <div class="meta-item col-span-4">
+                                        <h6>Form</h6>
+                                        <p>Example form 2</p>
+                                    </div>
+            
+                                    <div class="meta-item col-span-4">
+            
+                                        <p>
+                                            <b>Source:</b> Facebook<br>
+                                            <b>Referrer:</b> https://youtube.com<br>
+                                            <b>Lead Response:</b> social4<br>
+                                        </p>
+                                        
+                                        <p><a href="#">More Detail</a></p>
+                                    </div>
+            
+                                    <div class="meta-item col-span-4">
+                                        <h6>UTM</h6>
+                                        <p>
+                                            <b>Campaign:</b> live-new-10<br>
+                                            <b>Term:</b> live-term-new-10<br>
+                                            <b>Content:</b> live-contet-new-10<br>
+                                            <b>fbadid:</b> live-adid-new-10<br>
+                                            <b>Captured:</b> 7/1/2023 9:00 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="meeting grid">
+                        <div class="meta-item name col-span-6">
+                            <h3 class="meeting-name">Jose Philadelphia</h3>
+                            
+                            <div class="contact-info">
+                                <p>joephil@email.com</p>
+                                <p>
+                                    <b>Mobile:</b> (555) 555-5555<br>
+                                    <b>Office:</b> (555) 555-5555
+                                </p>
+                                <p>(Stripe api acct 1234)</p>
+                            </div>
+
+                            <div class="more-button" data-target="mi-2">
+                                <span class="label">More Info</span>
+                                <div class="img-wrap"><img src="assets/icons/add.svg" alt=""></div>
+                            </div>
+                        </div>
+                        
+                        <div class="meta-item demo-date col-span-6">
+                            <div class="demo-details grid">
+                                <div class="demo-header col-span-8">
+                                    <p class="lead-status pending">Demo Pending</p>
+                                    <h6>Demo requested on</h6>
+                                    <p>7/1/2023 9:00 am</p>
+                                    <p><small>Demo Booked: 6/1/2023 9:00 am</small></p>
+                                </div>
+                                
+                                <div class="demo-date-controls col-span-4">
+                                    <div class="toggle">
+                                        <span><img src="assets/icons/dots.svg" alt=""></span>
+                                    </div>
+
+                                    <ul class="inner">
+                                        <li>Label <span><img src="assets/icons/report.svg" alt=""></span></li>
+                                        <li>Label <span><img src="assets/icons/delete.svg" alt=""></span></li>
+                                        <li>Label <span><img src="assets/icons/archive.svg" alt=""></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="mi-2" class="add-info col-span-12">
+                            <div class="inner">
+                                <div class="grid">
+                                    <div class="meta-item col-span-4">
+                                        <h6>Form</h6>
+                                        <p>Example form 2</p>
+                                    </div>
+            
+                                    <div class="meta-item col-span-4">
+            
+                                        <p>
+                                            <b>Source:</b> Facebook<br>
+                                            <b>Referrer:</b> https://youtube.com<br>
+                                            <b>Lead Response:</b> social4<br>
+                                        </p>
+                                        
+                                        <p><a href="#">More Detail</a></p>
+                                    </div>
+            
+                                    <div class="meta-item col-span-4">
+                                        <h6>UTM</h6>
+                                        <p>
+                                            <b>Campaign:</b> live-new-10<br>
+                                            <b>Term:</b> live-term-new-10<br>
+                                            <b>Content:</b> live-contet-new-10<br>
+                                            <b>fbadid:</b> live-adid-new-10<br>
+                                            <b>Captured:</b> 7/1/2023 9:00 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meeting grid">
+                        <div class="meta-item name col-span-6">
+                            <h3 class="meeting-name">Big Jim</h3>
+                            
+                            <div class="contact-info">
+                                <p>bigjim@bigjim.com</p>
+                                <p>
+                                    <b>Mobile:</b> (555) 555-5555<br>
+                                    <b>Office:</b> (555) 555-5555
+                                </p>
+                                <p>(Stripe api acct 1234)</p>
+                            </div>
+
+                            <div class="more-button" data-target="mi-3">
+                                <span class="label">More Info</span>
+                                <div class="img-wrap"><img src="assets/icons/add.svg" alt=""></div>
+                            </div>
+                        </div>
+                        
+                        <div class="meta-item demo-date col-span-6">
+                            <div class="demo-details grid">
+                                <div class="demo-header col-span-8">
+                                    <p class="lead-status booked">Demo Booked</p>
+                                    <h6>Demo with Sara on</h6>
+                                    <p>7/1/2023 9:00 am</p>
+                                    <p><small>Demo Booked: 6/1/2023 9:00 am</small></p>
+                                </div>
+                                
+                                <div class="demo-date-controls col-span-4">
+                                    <div class="toggle">
+                                        <span><img src="assets/icons/dots.svg" alt=""></span>
+                                    </div>
+
+                                    <ul class="inner">
+                                        <li>Label <span><img src="assets/icons/report.svg" alt=""></span></li>
+                                        <li>Label <span><img src="assets/icons/delete.svg" alt=""></span></li>
+                                        <li>Label <span><img src="assets/icons/archive.svg" alt=""></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="mi-3" class="add-info col-span-12">
+                            <div class="inner">
+                                <div class="grid">
+                                    <div class="meta-item col-span-4">
+                                        <h6>Form</h6>
+                                        <p>Example form 2</p>
+                                    </div>
+            
+                                    <div class="meta-item col-span-4">
+            
+                                        <p>
+                                            <b>Source:</b> Facebook<br>
+                                            <b>Referrer:</b> https://youtube.com<br>
+                                            <b>Lead Response:</b> social4<br>
+                                        </p>
+                                        
+                                        <p><a href="#">More Detail</a></p>
+                                    </div>
+            
+                                    <div class="meta-item col-span-4">
+                                        <h6>UTM</h6>
+                                        <p>
+                                            <b>Campaign:</b> live-new-10<br>
+                                            <b>Term:</b> live-term-new-10<br>
+                                            <b>Content:</b> live-contet-new-10<br>
+                                            <b>fbadid:</b> live-adid-new-10<br>
+                                            <b>Captured:</b> 7/1/2023 9:00 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    
+            <!-- <footer>
+                <p>copyright 2023 spicy forms</p>
+            </footer> -->
+        </div>
+    </body>
+</html>
+<script src="js/main.js" defer></script>
+<script
+  defer
+  src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+></script>

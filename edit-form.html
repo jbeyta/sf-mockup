@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="author name" />
+        <meta name="application-name" content="app name" />
+        <meta name="desciption" content="page description" />
+        <meta name="keywords" content="Enter keywords here" />
+        <!-- Social Media Meta tags -->
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta name="theme-color" content="#222326" />
+        <link rel="apple-touch-icon" sizes="180x180" href="#" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icons/ico_32.png"
+        />
+        <link rel="icon" type="image/png" sizes="16x16" href="#" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+        <title>Spicy Forms Mockup</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="page-wrap">
+            <header>
+                <div class="logo-wrap">
+                    <img src="/assets/images/temp-logo.svg" alt="" />
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <li class="current">
+                            <a href="/edit-form.html">
+                                <span class="icon">
+                                    <img src="assets/icons/doc.svg" alt="" />
+                                </span>
+                                Forms
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/index.html">
+                                <span class="icon">
+                                    <img src="assets/icons/meeting.svg" alt="" />
+                                </span>
+                                Meetings
+                            </a>
+                        </li>
+
+                        <li>
+                            <a>
+                                <span class="icon">
+                                    <img src="assets/icons/leads.svg" alt="" />
+                                </span>
+                                Leads
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav-list secondary">
+                        <li><a>Integrations</a></li>
+                        <li class="has-children"><a>Notifications</a></li>
+                        <li><a>Source</a></li>
+                        <li><a>Webhooks</a></li>
+                    </ul>
+                </nav>
+
+                <div class="lower">
+                    <p>
+                        <span class="icon"><img src="/assets/icons/account.svg" alt="" /></span>
+                        <a>user@email.com</a>
+                    </p>
+                    <p>
+                        <span class="icon"><img src="/assets/icons/settings.svg" alt="" /></span>
+                        <a>Settings</a>
+                    </p>
+                    <p>
+                        <span class="icon"><img src="/assets/icons/logout.svg" alt="" /></span>
+                        <a>Logout</a>
+                    </p>
+                </div>
+            </header>
+    
+            <main>
+                <div class="page-header edit">
+                    <h1 class="page-title">New Form</h1>
+                    <button class="green">Save Form</button>
+                </div>
+
+                <div class="sf-wrap">
+                    <div class="form-group">
+                        <label for="form_name">Form Name (internal)</label>
+                        <input type="text" class="form-control" id="form_name" name="form_name">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="item">
+                                <label for="form_type">Form Type</label>
+                                <select class="form-control" id="form_type" name="form_type">
+                                    <option value="">Default</option>
+                                    <option value="form_only">Show Only Form Fields</option>
+                                </select>
+                            </div>
+        
+                            <div class="item">
+                                <label for="first_widget_step">What User Sees First</label>
+                                <select class="form-control" id="first_widget_step" name="first_widget_step">
+                                    <option value="form">Form Fields</option>
+                                    <option value="datetime">Calendar</option>
+                                </select>
+                            </div>
+        
+                            <div class="item">
+                                <label for="num_days_to_show"># of Future Days on Calendar: 10</label>
+                                <input type="range" class="custom-range" min="1" max="30" id="num_days_to_show" name="num_days_to_show">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="item">
+                                <label for="Submit_Button_Label">Submit Button Label</label>
+                                <input type="text" class="form-control" id="Submit_Button_Label" name="form_submit_btn_label" placeholder="Optional.  Default label is 'Continue'">
+                            </div>
+
+                            <div class="item">
+                                <label for="book_now_buffer">Buffer # Hours From Now For New Meetings</label>
+                                <select class="form-control" id="book_now_buffer" name="book_now_buffer">
+                                    <option value="0">0 minutes</option>
+                                    <option value="0.25">15 minutes</option>
+                                    <option value="0.5">30 minutes</option>
+                                    <option value="1">1 hour</option>
+                                    <option value="1.5">1.5 hours</option>
+                                    <option value="2">2 hours</option>
+                                    <option value="2.5">2.5 hours</option>
+                                    <option value="3">3 hours</option>
+                                    <option value="3.5">3.5 hours</option>
+                                    <option value="4">4 hours</option>
+                                </select>
+                            </div>
+        
+                            <div class="item">
+                                <label for="meeting_length_minutes">Meeting Length</label>
+                                <select class="form-control" id="meeting_length_minutes" name="meeting_length_minutes">
+                                    <option value="15">15 minutes</option>
+                                    <option value="30">30 minutes</option>
+                                    <option value="45">45 minutes</option>
+                                    <option value="60">1 hour</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="item">
+                                <label for="redirectUrl">Redirect Users to URL After Booking Meeting</label>
+                                <input type="text" class="form-control" id="redirectUrl" name="redirectUrl">
+                                <small></small>
+                            </div>
+
+                            <div class="item start-date">
+                                <label for="from_time">Available Start Time:</label>
+                                <input class="form-control" type="time" id="from_time" name="from_time" min="09:00" max="18:00" step="900"><!---->
+                            </div>
+                            
+                            <div class="item end-date">
+                                <label for="to_time">Available End Time:</label>
+                                <input class="form-control" type="time" id="to_time" name="to_time" min="09:00" max="18:00" step="900"><!---->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group border">
+                        <label for="meeting_name">Meeting Name</label>
+                        <input type="text" class="form-control" id="meeting_name" name="meeting_name">
+
+                        <div class="input-group mt-1">
+                            <div class="input-group-text">Insert Field:</div>
+
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Merge Fields">
+                                <button type="button" class="btn btn-outline-secondary">Sub Account Name</button>
+                                <button type="button" class="btn btn-outline-secondary">Lead Name</button>
+                                <button type="button" class="btn btn-outline-secondary">Email</button>
+                                <button type="button" class="btn btn-outline-secondary">Mobile Phone</button>
+                                <button type="button" class="btn btn-outline-secondary">Office Name</button>
+                                <button type="button" class="btn btn-outline-secondary">Office Phone</button>
+                                <button type="button" class="btn btn-success">Show Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group border">
+                        <label for="meeting_description">Meeting Description (optional)</label>
+                        <textarea class="form-control" id="meeting_description" name="meeting_description" rows="8"></textarea>
+
+                        <div class="input-group mt-1">
+                            <div class="input-group-text">Insert Field:</div>
+
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Merge Fields">
+                                <button type="button" class="btn btn-outline-secondary">Sub Account Name</button>
+                                <button type="button" class="btn btn-outline-secondary">Lead Name</button>
+                                <button type="button" class="btn btn-outline-secondary">Email</button>
+                                <button type="button" class="btn btn-outline-secondary">Mobile Phone</button>
+                                <button type="button" class="btn btn-outline-secondary">Office Name</button>
+                                <button type="button" class="btn btn-outline-secondary">Office Phone</button>
+                                <button type="button" class="btn btn-success">Show Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specificSubAccounts"> Specific Sub Accounts: (if blank, will use your Round Robin Defaults from Settings page) </label>
+                        <select name="specificSubAccounts" id="specificSubAccounts">
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                            <option value="">option 3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-info">Link to Facebook Ad Conversions</label>
+                        <button class="btn btn-info d-block">Select Custom Conversion</button>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="green">Save Form</button>
+                    </div>
+                </div>
+                
+            <!-- <footer>
+                <p>copyright 2023 spicy forms</p>
+            </footer> -->
+        </div>
+    </body>
+</html>
+<script src="js/main.js" defer></script>
+<script
+  defer
+  src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+></script>
