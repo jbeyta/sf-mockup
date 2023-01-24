@@ -366,24 +366,28 @@ input[type=phone] {
   padding: 10px;
   border-radius: 5px;
   font-size: 0.874rem;
+  border: solid 1px #1c2230;
+  height: 46px;
 }
 
 select {
   padding: 10px;
   border-radius: 5px;
   font-size: 0.874rem;
+  border: solid 1px #1c2230;
+  height: 46px;
 }
 
 textarea {
   padding: 10px;
   border-radius: 5px;
+  border: solid 1px #1c2230;
   font-size: 0.874rem;
 }
 
 button, input[type=submit] {
   padding: 10px 30px;
-  background-color: #1c2230;
-  color: #fff;
+  background-color: #8fb3dc;
   text-align: center;
   border: 0;
   font-size: 0.875rem;
@@ -392,11 +396,12 @@ button, input[type=submit] {
   transition: background-color 0.3s;
 }
 button:hover, input[type=submit]:hover {
-  background-color: #3e4860;
+  background-color: #89c0ff;
   transition: background-color 0.3s;
 }
 button.green, input[type=submit].green {
   background-color: green;
+  color: #fff;
 }
 button.green:hover, input[type=submit].green:hover {
   background-color: #00b300;
@@ -680,11 +685,10 @@ main .table-wrap table td:last-child, main .table-wrap table th:last-child {
   flex-direction: row;
   align-items: center;
   width: 100px;
-  background-color: #1c2230;
+  background-color: #8fb3dc;
   padding: 3px 10px;
   border-radius: 99px;
   font-size: 0.75rem;
-  color: #fff;
   margin-top: 1rem;
   cursor: pointer;
 }
@@ -712,11 +716,8 @@ main .table-wrap table td:last-child, main .table-wrap table th:last-child {
 }
 .meeting .meta-item.demo-date .demo-details {
   padding: 1rem;
-  background: #1c2230;
+  background: #e6e6e6;
   border-radius: 15px;
-}
-.meeting .meta-item.demo-date .demo-details * {
-  color: #fff;
 }
 .meeting .meta-item.demo-date .demo-details .demo-date-controls {
   position: relative;
@@ -741,7 +742,7 @@ main .table-wrap table td:last-child, main .table-wrap table th:last-child {
   height: 27px;
   padding: 3px;
   cursor: pointer;
-  background-color: #3e4860;
+  background-color: #fff;
   border-radius: 99px;
 }
 .meeting .meta-item.demo-date .demo-details .demo-date-controls .toggle span img {
@@ -755,7 +756,7 @@ main .table-wrap table td:last-child, main .table-wrap table th:last-child {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #3e4860;
+  background-color: #fff;
   list-style-type: none;
   margin: 0;
   padding: 1.5rem 1.5rem 1rem 1rem;
@@ -766,11 +767,18 @@ main .table-wrap table td:last-child, main .table-wrap table th:last-child {
 }
 .meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li {
   margin-bottom: 5px;
+}
+.meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #000;
+  text-decoration: none;
 }
-.meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li span {
+.meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li a:hover {
+  color: #2f7ac1;
+}
+.meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li a span {
   display: block;
   width: 24px;
   height: 24px;
@@ -778,7 +786,7 @@ main .table-wrap table td:last-child, main .table-wrap table th:last-child {
   margin-left: 5px;
   cursor: pointer;
 }
-.meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li span img {
+.meeting .meta-item.demo-date .demo-details .demo-date-controls .inner li a span img {
   display: block;
   width: 100%;
   height: 100%;

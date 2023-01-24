@@ -26,17 +26,15 @@
 
     .meta-item {
         &.name {
-
             .more-button {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 width: 100px;
-                background-color: #1c2230;
+                background-color: #8fb3dc;
                 padding: 3px 10px;
                 border-radius: 99px;
                 font-size: 0.75rem;
-                color: #fff;
                 margin-top: 1rem;
                 cursor: pointer;
     
@@ -72,12 +70,8 @@
 
             .demo-details {
                 padding: 1rem;
-                background: #1c2230;
+                background: #e6e6e6;
                 border-radius: 15px;
-
-                * {
-                    color: #fff;
-                }
     
                 .demo-date-controls {
                     position: relative;
@@ -105,7 +99,7 @@
                             height: 27px;
                             padding: 3px;
                             cursor: pointer;
-                            background-color: #3e4860;
+                            background-color: #fff;
                             border-radius: 99px;
 
                             img {
@@ -122,7 +116,7 @@
                         position: absolute;
                         top: 0;
                         right: 0;
-                        background-color: #3e4860;
+                        background-color: #fff;
                         list-style-type: none;
                         margin: 0;
                         padding: 1.5rem 1.5rem 1rem 1rem;
@@ -133,24 +127,33 @@
 
                         li {
                             margin-bottom: 5px;
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
                             
-                            span {
-                                display: block;
-                                width: 24px;
-                                height: 24px;
-                                padding: 3px;
-                                margin-left: 5px;
-                                cursor: pointer;
-                    
-                                img {
+                            a {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                color: #000;
+                                text-decoration: none;
+                            
+                                &:hover {
+                                    color: #2f7ac1;
+                                }
+
+                                span {
                                     display: block;
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: contain;
-                                    object-position: center;
+                                    width: 24px;
+                                    height: 24px;
+                                    padding: 3px;
+                                    margin-left: 5px;
+                                    cursor: pointer;
+                        
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                        object-position: center;
+                                    }
                                 }
                             }
                         }
